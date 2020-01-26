@@ -13,10 +13,10 @@ DB設計
 ## messagesテーブル
 |Column|Type|Option|
 |------|----|------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
-|imege|string|null: false|
-|body|text|null: false|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
+|imege|string|-----|
+|body|text|-----|
 
 ### Association
 - belongs_to :group
