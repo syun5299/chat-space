@@ -25,7 +25,7 @@ DB設計
 ## groupsテーブル
 |Column|Type|Option|
 |------|----|------|
-|group|string|null: false, unique: true|
+|name|string|null: false, unique: true|
 
 ### Association
 - has_many :groups_users
@@ -35,8 +35,8 @@ DB設計
 ### groups_usersテーブル
 |Column|Type|Option|
 |------|----|------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
