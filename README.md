@@ -25,12 +25,12 @@ DB設計
 ## groupsテーブル
 |Column|Type|Option|
 |------|----|------|
-|group_name|string|null: false, unique: true|
+|group|string|null: false, unique: true|
 
 ### Association
 - has_many :groups_users
 - has_many :messages
-- has_many :users, through: group_users
+- has_many :users, through: :group_users
 
 ### groups_usersテーブル
 |Column|Type|Option|
