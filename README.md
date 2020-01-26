@@ -1,3 +1,4 @@
+sample-DB
 DB設計
 ## usersテーブル
 |Column|Type|Option|
